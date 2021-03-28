@@ -1,0 +1,81 @@
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Navegacion Princial */
+.navegacion {
+    float: left;
+    width: 20%;
+    background-color: rgb(37, 35, 35);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /*Menu href*/
+  .navegacion a {
+    display: block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  
+  /*Al pasar mouse por encima*/
+  .navegacion a:hover:not(.active) {
+    filter: brightness(0.5);
+    transition: 0.5s;
+  }
+  
+  /* Contenido */
+  div.content {
+    margin-left: 20%;    
+    height: 100%;
+    width: 80%;
+    position: fixed;
+  }
+
+  /*colores*/
+
+ .celest {
+     height: 25%;
+      background-color: aqua
+  }
+
+.yellow {
+    height: 25%;
+    background-color: yellow;
+}
+
+.orange{
+    background-color: orange;
+    height: 25%;
+}
+
+.red {
+    background-color: red;
+    height: 25%;
+}
+  
+    /*Web Reponsive pendiente*/
+
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 20%;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
