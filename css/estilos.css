@@ -16,10 +16,13 @@
   
   /*Menu href*/
   .navegacion a {
+    text-align: left;
     display: block;
     color: white;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
+    margin-left: 20px;
+
   }
   
   
@@ -40,23 +43,32 @@
   /*colores*/
 
  .celest {
-     height: 25%;
-      background-color: aqua
+     height: 12.5%;
+     background-color: aqua;
+     color: white;
+     text-align: center;
+
   }
 
 .yellow {
-    height: 25%;
+    height: 12.5%;
     background-color: yellow;
+    color: white;
+    text-align: center;
 }
 
 .orange{
     background-color: orange;
-    height: 25%;
+    height: 12.5%;
+    color: white;
+    text-align: center;
 }
 
 .red {
     background-color: red;
-    height: 25%;
+    height: 12.5%;
+    color: white;
+    text-align: center;
 }
   
     /*Web Reponsive pendiente*/
