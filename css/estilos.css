@@ -4,7 +4,9 @@
     padding: 0px;
 }
 
-/*    Navegacion Princial     */
+
+/*Navegacion Princial */
+
 .navegacion {
     float: left;
     width: 20%;
@@ -12,53 +14,45 @@
     position: fixed;
     height: 100%;
     overflow: auto;
-  }
-  
-  /*Menu href*/
-  .navegacion a {
+}
+
+
+/*Menu href*/
+
+.navegacion a {
     text-align: left;
     display: block;
     color: white;
+    padding: 5px;
     padding: 10px;
     text-decoration: none;
     margin-left: 20px;
+}
 
-  }
-  
-  
-  /*Al pasar mouse por encima*/
-  .navegacion a:hover:not(.active) {
-    filter: brightness(0.5);
-    transition: 0.5s;
-  }
-  
-  /* Contenido */
-  div.content {
-    margin-left: 20%;    
-    height: 100%;
-    width: 80%;
-    position: fixed;
-  }
+@@ -40,
+23+43,
+32 @@
+/*colores*/
 
-  /*colores*/
-
- .celest {
-     height: 12.5%;
-     background-color: aqua;
-     color: white;
-     text-align: center;
-
-  }
+.celest {
+    height: 25%;
+    background-color: aqua height: 12.5%;
+    background-color: aqua;
+    color: white;
+    text-align: center;
+}
 
 .yellow {
+    height: 25%;
     height: 12.5%;
     background-color: yellow;
     color: white;
     text-align: center;
 }
 
-.orange{
+.orange {
     background-color: orange;
+    height: 25%;
     height: 12.5%;
     color: white;
     text-align: center;
@@ -66,28 +60,38 @@
 
 .red {
     background-color: red;
+    height: 25%;
     height: 12.5%;
     color: white;
     text-align: center;
 }
-  
-    /*Web Reponsive pendiente*/
 
-  /* On screens that are less than 700px wide, make the sidebar into a topbar */
-  @media screen and (max-width: 700px) {
+
+/*Web Reponsive pendiente*/
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+
+@media screen and (max-width: 700px) {
     .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
+        width: 100%;
+        height: auto;
+        position: relative;
     }
-    .sidebar a {float: left;}
-    div.content {margin-left: 20%;}
-  }
-  
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
     .sidebar a {
-      text-align: center;
-      float: none;
+        float: left;
     }
-  }
+    div.content {
+        margin-left: 20%;
+    }
+}
+
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
